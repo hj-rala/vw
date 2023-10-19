@@ -1,0 +1,14 @@
+ height: calc(var(--vh) - 10px);
+
+
+
+
+
+
+// 모바일 상태바 변경에 따른 height 전체높이 계산
+  const setVh = () => {
+    document.documentElement.style.setProperty("--vh", `${window.innerHeight}px`);
+  };
+  //window.addEventListener("resize", setVh);
+
+setVh();
